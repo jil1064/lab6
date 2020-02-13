@@ -25,7 +25,7 @@ function addProjectDetails(e) {
 	var projectID = $(this).closest('.project').attr('id');
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
-    var temp = "http://localhost:3000/project/" + idNumber;
+    var temp = "https://lab6isnotavailable.herokuapp.com/project/" + idNumber;
     
     $.get(temp, function(data){
 
